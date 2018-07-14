@@ -82,13 +82,10 @@ def parse_value(s):
     # Figure out what type val is: float, int or string.
     try:
         val = int(s)
-        print("int")
     except ValueError:
         try:
             val = float(s)
-            print("float")
         except ValueError:
-            print("string")
             val = s
     return val
 
